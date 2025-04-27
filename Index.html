@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"/><title>Eagle-Eye Chat</title>
+  <script src="https://js.puter.com/v2/"></script> <!-- Puter.js Quickstart -->
+</head>
+<body>
+  <div id="chat"></div>
+  <script>
+    async function startChat() {
+      const res = await puter.ai.chat("Hallo Eagle-Eye!");
+      document.getElementById("chat").innerText = res;
+    }
+    startChat();
+  </script>
+</body>
+</html>
